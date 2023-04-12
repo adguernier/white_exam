@@ -8,12 +8,23 @@
         {% block stylesheets %}
             {{ encore_entry_link_tags('app') }}
         {% endblock %}
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li>
+                    <a href="{{ path('app_home_index') }}">Home</a>
+                </li>
+
+                <li>
+                    <a href="{{ path('app_register') }}">Register</a>
+                </li>
+            </ul>
+        </nav>
+        {% block body %}{% endblock %}
 
         {% block javascripts %}
             {{ encore_entry_script_tags('app') }}
         {% endblock %}
-    </head>
-    <body>
-        {% block body %}{% endblock %}
     </body>
 </html>

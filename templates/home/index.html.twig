@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+<ul>
+    {% for topic in topics %}
+        <li>{{ topic.id }}</li>
+    {% endfor %}
+</ul>
+    
+{% endblock %}
